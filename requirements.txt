@@ -1,0 +1,3 @@
+python with associated modules
+mplayer will x11 support
+x11

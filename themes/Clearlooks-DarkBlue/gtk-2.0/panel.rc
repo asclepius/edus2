@@ -1,0 +1,64 @@
+# Written by roberTo
+##################### PANEL BACKGROUND ###############################
+style "panelbg"
+{
+  xthickness            			= 2
+  ythickness            			= 2
+  bg_pixmap[NORMAL]		= "panelbg.png"
+}
+class "*Panel*" style "panelbg"
+
+
+##################### PANEL BUTTONS ###############################
+style "panelbuttons" = "default"
+{
+  xthickness            			= 0
+  ythickness            			= 0
+
+	GtkWidget::focus_padding = 2
+
+#	engine "pixmap" {
+#      
+#		image
+#		{
+#			function        			= BOX
+#			recolorable     			= TRUE
+#			state					= NORMAL
+#			file            			= "tool-n.png"
+#			border          			=  { 14, 14, 6, 6 }
+#			stretch         			= TRUE
+#		}
+#		
+#		image
+#		{
+#			function        			= BOX
+#			recolorable     			= TRUE
+#			state					= PRELIGHT
+#			file            			= "tool-p.png"
+#			border          			=  { 14, 14, 6, 6 }
+#			stretch         			= TRUE
+#		}
+#		
+#		image
+#		{
+#			function        			= BOX
+#			recolorable     			= TRUE
+#			state					= ACTIVE
+#			file            			= "tool-a.png"
+#			border          			=  { 14, 14, 6, 6 }
+#			stretch         			= TRUE
+#		}  
+#		image
+#		{
+#			function        			= BOX
+#			recolorable     			= TRUE
+#			state					= INSENSITIVE
+#			file            			= "tool-ins.png"
+#			border          			=  { 14, 14, 6, 6 }
+#			stretch         			= TRUE
+#		}  
+#	}
+}
+widget_class "*Panel*GtkToggleButton" style "panelbuttons"
+widget_class "*Panel*GtkButton" style "panelbuttons"
+

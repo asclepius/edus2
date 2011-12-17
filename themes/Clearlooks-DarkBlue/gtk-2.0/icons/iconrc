@@ -1,0 +1,66 @@
+style "icons" {
+	stock["volume-max"] 	= {{ "volume-max.png", *, *, * }}
+	stock["volume-med"] 	= {{ "volume-med.png", *, *, * }}
+	stock["volume-min"] 		= {{ "volume-min.png", *, *, * }}
+	stock["volume-mute"] 	= {{ "volume-mute.png", *, *, * }}
+	stock["volume-zero"] 	= {{ "volume-mute.png", *, *, * }}
+	stock ["media-stop"] 		= {{"media-stop.svg", *, *, * }}
+	stock ["media-play"] 		= {{"media-play.svg", *, *, * }}
+	stock ["media-pause"] 	= {{"media-pause.svg", *, *, * }}
+	stock ["media-prev"] 		= {{"media-previous.svg", *, *, * }}
+	stock ["media-next"] 		= {{"media-next.svg", *, *, * }}
+	stock ["media-eject"] 		= {{"media-eject.svg", *, *, * }}
+	#stock ["media-record"]	= {{"media-record.svg", *, *, * }}
+	stock ["media-ffwd"]		= {{"media-forward.svg", *, *, * }}
+	stock ["media-rewind"]	= {{"media-rewind.svg", *, *, * }}
+
+  	stock["gtk-go-back"] 	= {{ "gtk-go-back.svg", *, *, * }}
+  	stock["gtk-go-forward"] 	= {{ "gtk-go-forward.svg", *, *, * }}
+	stock["gtk-go-down"] 	= {{ "gtk-go-down.svg", *, *, * }}
+	stock["gtk-go-up"] 		= {{ "gtk-go-up.svg", *, *, * }}
+	stock["gtk-close"] 		= {{ "gtk-close.svg", *, *, * }}
+	stock["gtk-stop"] 		= {{ "gtk-close.svg", *, *, * }}
+	stock["gtk-refresh"] 		= {{ "gtk-refresh.svg", *, *, * }}
+	stock["gtk-home"] 		= {{ "stock-home.svg", *, *, * }}
+	stock ["panel-main-menu"] = {{"gnome-main-menu.svg",*,*,*}}
+
+	stock["gtk-add"] 		= {{ "gtk-add.svg", *, *, * }}
+	stock["gtk-remove"] 		= {{ "gtk-remove.svg", *, *, * }}
+	stock["gtk-new"] 		= {{ "gtk-new.svg", *, *, * }}
+	stock["gtk-apply"] 		= {{ "gtk-apply.svg", *, *, * }}
+}
+widget_class "GtkWidget" style "icons"
+class "GtkWidget" style "icons"
+
+style "rhythmbox"
+{
+	stock["rhythmbox-volume-max"] 	= {{ "volume-max.png", *, *, * }}
+	stock["rhythmbox-volume-medium"] = {{ "volume-med.png", *, *, * }}
+	stock["rhythmbox-volume-min"] 	= {{ "volume-min.png", *, *, * }}
+	stock["rhythmbox-volume-zero"] 	= {{ "volume-mute.png", *, *, * }}
+	stock["rhythmbox-volume-mute"] 	= {{ "volume-mute.png", *, *, * }}
+	stock["rhythmbox-play"] 			= {{ "media-play.svg", *, *, * }}
+	stock["rhythmbox-stop"] 			= {{ "media-stop.svg", *, *, * }}
+	stock["rhythmbox-previous"] 		= {{ "media-previous.svg", *, *, * }}
+	stock["rhythmbox-next"] 			= {{ "media-next.svg", *, *, * }}
+	stock["rhythmbox-pause"] 		= {{ "media-pause.svg", *, *, * }}
+}
+class "GtkWidget" style "rhythmbox"
+
+style "muine"
+{
+	stock["muine-volume-max"] 		= {{ "volume-max.png", *, *, * }}
+	stock["muine-volume-medium"] 		= {{ "volume-med.png", *, *, * }}
+	stock["muine-volume-min"] 		= {{ "volume-min.png", *, *, * }}
+	stock["muine-volume-zero"] 		= {{ "volume-mute.png", *, *, * }}
+	stock["muine-volume-mute"] 		= {{ "volume-mute.png", *, *, * }}
+	stock["muine-play"] 				= {{ "media-play.svg", *, *, * }}
+	stock["muine-stop"] 				= {{ "media-stop.svg", *, *, * }}
+	stock["muine-previous"] 			= {{ "media-previous.svg", *, *, * }}
+	stock["muine-next"] 				= {{ "media-next.svg", *, *, * }}
+	stock["muine-pause"] 				= {{ "media-pause.svg", *, *, * }}
+	stock["muine-rewind"] 			= {{ "media-rewind.svg", *, *, * }}
+	stock["muine-forward"] 			= {{ "media-forward.svg", *, *, * }}
+}
+class "GtkWidget" style "muine"
+

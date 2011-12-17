@@ -1,0 +1,22 @@
+style "rhythmbox"
+{
+	stock["rhythmbox-play"] 			= {{ "media-play.png", *, *, * }}
+	stock["rhythmbox-stop"] 			= {{ "media-stop.png", *, *, * }}
+	stock["rhythmbox-previous"] 		= {{ "media-previous.png", *, *, * }}
+	stock["rhythmbox-next"] 			= {{ "media-next.png", *, *, * }}
+	stock["rhythmbox-pause"] 			= {{ "media-pause.png", *, *, * }}
+}
+class "GtkWidget" style "rhythmbox"
+
+style "muine"
+{
+	stock["muine-play"] 				= {{ "media-play.png", *, *, * }}
+	stock["muine-stop"] 				= {{ "media-stop.png", *, *, * }}
+	stock["muine-previous"] 			= {{ "media-previous.png", *, *, * }}
+	stock["muine-next"] 				= {{ "media-next.png", *, *, * }}
+	stock["muine-pause"] 				= {{ "media-pause.png", *, *, * }}
+	stock["muine-rewind"] 				= {{ "media-rewind.png", *, *, * }}
+	stock["muine-forward"] 				= {{ "media-forward.png", *, *, * }}
+}
+class "GtkWidget" style "muine"
+

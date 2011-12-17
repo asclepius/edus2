@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link href="/stylesheets/default.css?9" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/highlight.css?9" rel="stylesheet" type="text/css">
+    <link href='/images/favicon.ico' rel='shortcut icon' type='image/ico'>
+  </head>
+  <body>
+    <h1><a href="{{ base.url }}/">edus2</a></h1>
+    <nav>
+      <ul>
+        <li><a href="{{ base.url }}/">Intro</a></li>
+        <li><a href="{{ base.url }}/about/">About</a></li>
+        <li><a href="https://github.com/asclepius/edus2/wiki">Wiki</a></li>
+      </ul>
+    </nav>
+    {{ content }}
+  </body>
+</html>

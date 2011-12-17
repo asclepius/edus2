@@ -1,111 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
+---
+layout: default
+title: EDUS2
+---
 
-  <title>asclepius/edus2 @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #eaf9fa;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #150605; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #150605; }
-    h3 { text-align: center; color: #150605; }
-    a { color: #150605; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/asclepius/edus2"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/asclepius/edus2/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/asclepius/edus2/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/asclepius/edus2">edus2</a>
-      <span class="small">by <a href="https://github.com/asclepius">asclepius</a></span></h1>
-
-    <div class="description">
-      Emergency Department Ultrasound Simulator
-    </div>
-
-    
-      <p>EDUS2(TM) utilizes an RFID scanner disguised as an ultrasound probe.  Tags are placed under the skin of a simulation mannequin which corresponds to live recorded ultrasounds scans on patients presenting to the emergency department.</p>
-    
-
-    
-      <h2>Dependencies</h2>
-      <p>Python-mplayer (http://code.google.com/p/python-mplayer/)
-      <br/><br/>
-MPlayer (www.mplayerhq.hu) - Make sure it has X11 support built in and the codecs for your scans are available.<br/><br/>
-
-An Olimex MOD-RFID125 RFID tag scanner.<br/><br/>
+<h2>Project Summary</h2>
 
 
+  The Emergency Department Ultrasound Simulator (EDUS2TM) is a portable bedside ultrasound device that allows for the seamless integration of Emergency Department Ultrasound (EDUS) into high fidelity simulation scenarios (HFS). Competence in bedside ultrasound requires 3 components: awareness of indications, mastery in image generation and sound image interpretation. While the 2nd component, image generation, can be readily gained through the scanning of healthy volunteers, application of indications and interpretation of positive and negative findings in the setting of a critically ill patient is much less common. Trainees using the EDUS2 gain the opportunity to determine whether to use bedside ultrasound (indications), how to properly hold and place the probe (image generation) and finally how to assess scans (image interpretation) as displayed on the EDUS2 screen all within the context of an HFS scenario.
+  <br>
 
 
-Some 125 MHz RFID tags.<br/></p>
-    
-
-    
-      <h2>Install</h2>
-      <p>Run the python script.  Check the wiki for full details.</p>
-    
-
-    
-      <h2>License</h2>
-      <p>The associated code is licensed under the GPLv3.  (http://www.gnu.org/copyleft/gpl.html)</p>
-    
-
-    
-      <h2>Authors</h2>
-      <p>Paul Kulyk <br/> 
-      Paul Olszynksi
-      </p>
-
-    
-
-    
-      <h2>Contact</h2>
-      <p> Paul Kulyk(paul.kulyk@gmail.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/asclepius/edus2/zipball/master">zip</a> or
-      <a href="https://github.com/asclepius/edus2/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/asclepius/edus2</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/asclepius/edus2">asclepius/edus2</a>
-    </div>
-
-  </div>
-
-</body>
-</html>
+      The EDUS2 plays predetermined video clips of areas of interest through the coupling of those videos to specific RFID cards placed under the skin of an existing HFS mannequin. We use a USB based RFID scanner hidden inside a gutted low frequency probe as a simulated probe. Multiple scans are possible during any given scenario including thoracic, cardiac, abdominal and pelvic. To our knowledge, this is the first such EDUS simulator that allows for actual use of a probe on any available manufactured HFS mannequin resulting in seamless incorporation of EDUS into all HFS scenarios.
+<!-- article>
+  <time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%d %b" }}</time>
+  <h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
+  {{ site.posts.first.content }}
+</article>
+<hr>
+<h2>Archive</h2>
+<ol id="archive">
+  {% for post in site.posts offset:1 %}
+    <li>
+      <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    </li>
+  {% endfor %}
+</ol--!>
+{% include footer.html %}

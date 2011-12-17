@@ -1,0 +1,9 @@
+---
+exclude: ['Rakefile', 'README.markdown', '_design', 'Gemfile', 'Gemfile.lock']
+markdown: redcarpet
+redcarpet:
+    extensions: ['smart', 'no_intraemphasis']
+permalink: pretty
+pygments: true
+safe: false
+host: asclepius.github.com/edus2

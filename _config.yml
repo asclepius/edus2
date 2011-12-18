@@ -6,5 +6,5 @@ redcarpet:
 permalink: pretty
 pygments: true
 safe: false
-host: asclepius.github.com/edus2/
-baseurl: /edus2/
+host: www.edus2.com
+baseurl: /

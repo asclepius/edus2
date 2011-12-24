@@ -6,7 +6,7 @@ title: Scans
 <h2>Scans</h2>
 
 <p>
-All the scans we have created are available under the Creative Commons, Non-commercial Share-alike license on Vimeo.
+All the scans we have created are available under the Creative Commons, Non-commercial Share-alike licenseon Vimeo.
 </p>
 <p>
 All scans uploaded by us are available <a href="http://vimeo.com/album/1783385">here</a>.  With a Vimeo account you can download these scans for your own use.
@@ -19,4 +19,3 @@ For more information on this please see the <a href="https://github.com/asclepiu
 </p>
 <h2>Sample Video</h2>
 <iframe src="http://player.vimeo.com/video/33987514?byline=0&amp;portrait=0" width="400" height="333" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p>A scan of a normal abdominal aorta.</p>
-{% include footer.html %}

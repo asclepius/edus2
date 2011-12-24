@@ -1,29 +1,21 @@
 ---
 layout: default
-title: edus2, emergency department ultrasound simulator
+title: edus2, blog
 ---
 
-<h2>Project Summary</h2>
-
-<p>
-The Emergency Department Ultrasound Simulator (edus<sup>2</sup><sub>TM</sub>) is a portable bedside ultrasound device that allows for the seamless integration of Emergency Department Ultrasound (EDUS) into high fidelity simulation scenarios (HFS). Competence in bedside ultrasound requires 3 components: awareness of indications, mastery in image generation and sound image interpretation. While the 2nd component, image generation, can be readily gained through the scanning of healthy volunteers, application of indications and interpretation of positive and negative findings in the setting of a critically ill patient is much less common. Trainees using the edus<sup>2</sup> gain the opportunity to determine whether to use bedside ultrasound (indications), how to properly hold and place the probe (image generation) and finally how to assess scans (image interpretation) as displayed on the edus<sup>2</sup> screen all within the context of an HFS scenario.
-</p>
-<p>
-The edus<sup>2</sup> plays predetermined video clips of areas of interest through the coupling of those videos to specific RFID cards placed under the skin of an existing HFS mannequin. We use a USB based RFID scanner hidden inside a gutted low frequency probe as a simulated probe. Multiple scans are possible during any given scenario including thoracic, cardiac, abdominal and pelvic. To our knowledge, this is the first such EDUS simulator that allows for actual use of a probe on any available manufactured HFS mannequin resulting in seamless incorporation of EDUS into all HFS scenarios.
-</p>
-<!-- article>
-<time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%d %b" }}</time>
-<h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
-{{ site.posts.first.content }}
+<article>
+  <time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%d %b" }}</time>
+  <h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
+  {{ site.posts.first.content }}
 </article>
 <hr>
 <h2>Archive</h2>
 <ol id="archive">
   {% for post in site.posts offset:1 %}
-  <li>
-  <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-  <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  </li>
+    <li>
+      <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    </li>
   {% endfor %}
-  </ol--!>
+</ol>
 {% include footer.html %}

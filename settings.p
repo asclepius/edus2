@@ -1,0 +1,9 @@
+(lp0
+(lp1
+S'AAA'
+p2
+aS'deadbeef99'
+p3
+aS'./data/aaa_neg.mp4'
+p4
+aa.

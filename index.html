@@ -1,49 +1,21 @@
 ---
 layout: default
-title: edus2, emergency department ultrasound simulator
+title: edus2, blog
 ---
 
-<h2>Project Summary</h2>
-<p>
-<i>
-The following is an excerpt from the full project description available <a href="{{ site.baseurl }}/files/EDUS2final.pdf">here</a>.
-</i>
-</p>
-
-<p>
-The Emergency Department Ultrasound Simulator (edus<sup>2</sup><sub>TM</sub>) is a portable bedside ultrasound device that allows for the seamless integration of Emergency Department Ultrasound (EDUS) into high fidelity simulation scenarios (HFS).  Trainees using the edus<sup>2</sup> gain the opportunity to determine whether to use bedside ultrasound (indications), how to properly hold and place the probe (image generation) and finally how to assess scans (image interpretation) as displayed on the edus<sup>2</sup> screen all within the context of an HFS scenario.
-</p>
-<p>
-The edus<sup>2</sup> plays predetermined video clips of areas of interest through the coupling of those videos to specific RFID cards placed under the skin of an existing HFS mannequin. We use a USB based RFID scanner hidden inside a gutted low frequency probe as a simulated probe. Multiple scans are possible during any given scenario including thoracic, cardiac, abdominal and pelvic. To our knowledge, this is the first such EDUS simulator that allows for actual use of a probe on any available manufactured HFS mannequin resulting in seamless incorporation of EDUS into all HFS scenarios.
-</p>
-
-<p>
-<iframe src="http://player.vimeo.com/video/34991434" width="400" height="533" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-</p>
-
-<h3>Who is using it?</h3>
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?msa=0&amp;msid=208935555576167595578.0004bd575277382e7cdcf&amp;ie=UTF8&amp;t=h&amp;ll=51.727028,-93.339844&amp;spn=38.453974,74.707031&amp;z=3&amp;output=embed"></iframe><br /><small>View <a href="http://maps.google.com/maps/ms?msa=0&amp;msid=208935555576167595578.0004bd575277382e7cdcf&amp;ie=UTF8&amp;t=h&amp;ll=51.727028,-93.339844&amp;spn=38.453974,74.707031&amp;z=3&amp;source=embed" style="color:#0000FF;text-align:left">edus2</a> in a larger map</small>
-
-
-<h3>License and FAQ</h3>
-<p>
-We've been getting a few questions, particularly about licensing and patents... the project is licensed under the Creative Common's Attribution Non-commercial Share-Alike license.  This and few other questions we've been receiving are addressed in the video below."
-</p>
-<p><a href="http://www.xtranormal.com/watch/12940926/edus2" target="_blank" style="font-size: 14px;font-weight:bold;">edus2</a><br />by: <a href="http://www.xtranormal.com/profile/5157065" style="" target="_blank">pao292</a></p><iframe id="xtranormal_edus2" name="xtranormal_edus2" style="width:640px;height:389px;" src="http://www.xtranormal.com/xtraplayr/12940926/edus2" marginwidth="0" marginheight="0" border="0" frameborder="0" scrolling="auto"></iframe><p>about edus2 and the creative commons license</p>
-
-<!-- article>
-<time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%d %b" }}</time>
-<h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
-{{ site.posts.first.content }}
+<article>
+  <time datetime="{{ site.posts.first.date | xmlschema }}">{{ site.posts.first.date | date: "%d %b" }}</time>
+  <h2><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
+  {{ site.posts.first.content }}
 </article>
 <hr>
 <h2>Archive</h2>
 <ol id="archive">
   {% for post in site.posts offset:1 %}
-  <li>
-  <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-  <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  </li>
+    <li>
+      <time datetime="{{ post.date | xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    </li>
   {% endfor %}
-  </ol--!>
-  {% include footer.html %}
+</ol>
+{% include footer.html %}

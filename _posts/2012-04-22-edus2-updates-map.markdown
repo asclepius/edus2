@@ -1,6 +1,6 @@
 ---
 layout: post
-title: edus2 updates: systems built across the country 
+title: edus2 systems built across the country 
 ---
 
 Several medical schools and private MD/hackers have now expressed interest in the edus2 system.  Jel Coward and Rebecca Lindley in BC were the first to put anything together.  Sev Perelman and Finch Taylor have put a system together in Toronto.  Many other institutions have begun purchasing parts or have expressed interest in integrating this system into their own SimLabs.

@@ -5,29 +5,6 @@ title: edus2 down under
 
 We received news today that another system is near completion.  This one is Brisbane, Australia. 
 
-#    Hi,
-#
-#    I have almost completed my EDUS2. I am in the process of programming the RFID 
-#    tags. This is an excellent invention. Your instructions in its creation were superb. 
-#
-#    I am a simulation coordinator and senior nurse in ER. I work with the ER 
-#    consultants in the registrar training program and this will be perfect for the 
-#    simulations we run for them.
-#
-#    I will post some pictures on twitter and a video on YouTube (simninjacom) when 
-#    it is completed. 
-#
-#    Keep up the good work
-#
-#    Many Thanks
-#
-#    Luke Wainwright
-#
-#    Simulation coordinator 
-#    Clinical Nurse Emergency Department
-#    Brisbane 
-#    Australia
-
 It is great to hear about edus2 making it's way around the world.  Please let us know if you are building your own system and keep us posted on what it is looking like.
 
 We have added another pin to the map.

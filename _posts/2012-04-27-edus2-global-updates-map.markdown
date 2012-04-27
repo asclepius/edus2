@@ -7,11 +7,15 @@ We received news today that another system is near completion.  This one is Bris
 
     Hi,
 
-    I have almost completed my EDUS2. I am in the process of programming the RFID tags. This is an excellent invention. Your instructions in its creation were superb. 
+    I have almost completed my EDUS2. I am in the process of programming the RFID 
+    tags. This is an excellent invention. Your instructions in its creation were superb. 
 
-    I am a simulation coordinator and senior nurse in ER. I work with the ER consultants in the registrar training program and this will be perfect for the simulations we run for them.
+    I am a simulation coordinator and senior nurse in ER. I work with the ER 
+    consultants in the registrar training program and this will be perfect for the 
+    simulations we run for them.
 
-    I will post some pictures on twitter and a video on YouTube (simninjacom) when its completed. 
+    I will post some pictures on twitter and a video on YouTube (simninjacom) when 
+    it is completed. 
 
     Keep up the good work
 

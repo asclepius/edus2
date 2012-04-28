@@ -10,10 +10,10 @@ layout: default
 <hr>
 <div id="paginator">
   {% if page.previous %}
-  <a id="left" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Older</a>
+  <a id="left" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}</a>
   {% endif %}
   {% if page.next %}
-  <a id="right" href="{{ page.next.url }}" title="{{ page.next.title }}">Newer &rarr;</a>
+  <a id="right" href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} &rarr;</a>
   {% endif %}
 </div>
 <h3>Comments</h3>

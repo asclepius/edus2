@@ -6,5 +6,5 @@ redcarpet:
 permalink: pretty
 pygments: true
 safe: false
-host: www.edus2.com
-baseurl: 'http://www.edus2.com'
+#host: www.edus2.com
+#baseurl: 'http://www.edus2.com'

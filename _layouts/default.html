@@ -6,18 +6,33 @@
     <link href="{{ site.baseurl }}/stylesheets/default.css?9" rel="stylesheet" type="text/css">
     <link href="{{ site.baseurl }}/stylesheets/highlight.css?9" rel="stylesheet" type="text/css">
     <link href='{{ site.baseurl }}/images/favicon.ico' rel='shortcut icon' type='image/ico'>
+    <!-- Google Analytics --!>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-31793013-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+</script>
+
   </head>
   <body>
     <h1><a href="http://www.edus2.com">edus<sup>2</sup></a></h1>
     <nav>
-      <ul>
-        <li><a href="{{ site.baseurl }}/">Blog</a></li>
-        <li><a href="{{ site.baseurl }}/summary/">Summary</a></li>
-        <li><a href="{{ site.baseurl }}/system/">System</a></li>
-        <li><a href="https://github.com/asclepius/edus2/wiki">Wiki</a></li>
-        <li><a href="{{ site.baseurl }}/comments/">Comments</a></li>
-        <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
-      </ul>
+    <ul>
+      <li><a href="{{ site.baseurl }}/">Blog</a></li>
+      <li><a href="{{ site.baseurl }}/summary/">Summary</a></li>
+      <li><a href="{{ site.baseurl }}/system/">System</a></li>
+      <li><a href="https://github.com/asclepius/edus2/wiki">Wiki</a></li>
+      <li><a href="{{ site.baseurl }}/comments/">Comments</a></li>
+      <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+    </ul>
     </nav>
     <a href="http://feeds.feedburner.com/edus2/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/images/feed-icon-48x48.png" alt="Follow us here" /></a>
     {{ content }}

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
+  <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkAboutDialog" id="aboutdialog1">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
@@ -15,12 +16,12 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
     <property name="website">http://asclepius.github.com</property>
     <property name="authors">Paul Kulyk</property>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox2">
+      <object class="GtkVBox" id="dialog-vbox2">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area2">
+          <object class="GtkHButtonBox" id="dialog-action_area2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
@@ -43,23 +44,21 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
     <property name="border_width">5</property>
     <property name="type_hint">dialog</property>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox4">
+      <object class="GtkVBox" id="dialog-vbox4">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area4">
+          <object class="GtkHButtonBox" id="dialog-action_area4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button6">
                 <property name="label">gtk-apply</property>
-                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_add_scan_apply_clicked" swapped="no"/>
               </object>
@@ -72,11 +71,9 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
             <child>
               <object class="GtkButton" id="button7">
                 <property name="label">gtk-cancel</property>
-                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
@@ -132,6 +129,8 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
                 <property name="text" translatable="yes">AAA pos</property>
                 <property name="primary_icon_activatable">False</property>
                 <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -170,6 +169,8 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
                 <property name="text" translatable="yes">3bde39abb</property>
                 <property name="primary_icon_activatable">False</property>
                 <property name="secondary_icon_activatable">False</property>
+                <property name="primary_icon_sensitive">True</property>
+                <property name="secondary_icon_sensitive">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -253,7 +254,7 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
     <property name="type_hint">dialog</property>
     <property name="transient_for">window1</property>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox1">
+      <object class="GtkVBox" id="dialog-vbox1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="spacing">2</property>
@@ -275,7 +276,6 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
             <property name="can_focus">True</property>
             <property name="resize_mode">immediate</property>
             <property name="shadow_type">in</property>
-            <property name="min_content_width">400</property>
             <child>
               <object class="GtkTreeView" id="treeview2">
                 <property name="visible">True</property>
@@ -287,9 +287,6 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
                 <property name="rubber_banding">True</property>
                 <property name="enable_grid_lines">both</property>
                 <property name="enable_tree_lines">True</property>
-                <child internal-child="selection">
-                  <object class="GtkTreeSelection" id="treeview-selection"/>
-                </child>
                 <child>
                   <object class="GtkTreeViewColumn" id="name_col">
                     <property name="title" translatable="yes">Name</property>
@@ -333,18 +330,16 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
           </packing>
         </child>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area1">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button1">
                 <property name="label">gtk-ok</property>
-                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
@@ -369,11 +364,9 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
             <child>
               <object class="GtkButton" id="button4">
                 <property name="label">gtk-add</property>
-                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_add_scan_press" swapped="no"/>
               </object>
@@ -386,11 +379,9 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
             <child>
               <object class="GtkButton" id="button5">
                 <property name="label">gtk-remove</property>
-                <property name="use_action_appearance">False</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="use_action_appearance">False</property>
                 <property name="use_stock">True</property>
                 <signal name="clicked" handler="cb_remove_scan_press" swapped="no"/>
               </object>
@@ -440,6 +431,7 @@ Now click done, go to the main window and start teaching students how to interpr
     </data>
   </object>
   <object class="GtkWindow" id="window1">
+    <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">EDUS Simulator</property>
     <signal name="destroy" handler="gtk_main_quit" swapped="no"/>
@@ -540,11 +532,9 @@ Now click done, go to the main window and start teaching students how to interpr
                     <child>
                       <object class="GtkButton" id="button3">
                         <property name="label" translatable="yes">About</property>
-                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
-                        <property name="use_action_appearance">False</property>
                         <signal name="clicked" handler="cb_about_press" swapped="no"/>
                       </object>
                       <packing>
@@ -556,11 +546,9 @@ Now click done, go to the main window and start teaching students how to interpr
                     <child>
                       <object class="GtkButton" id="Exit">
                         <property name="label">Quit</property>
-                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
-                        <property name="use_action_appearance">False</property>
                         <signal name="clicked" handler="gtk_main_quit" swapped="no"/>
                       </object>
                       <packing>
@@ -573,11 +561,9 @@ Now click done, go to the main window and start teaching students how to interpr
                     <child>
                       <object class="GtkButton" id="Settings">
                         <property name="label" translatable="yes">Settings</property>
-                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
-                        <property name="use_action_appearance">False</property>
                         <signal name="clicked" handler="cb_settings_press" swapped="no"/>
                       </object>
                       <packing>
@@ -590,11 +576,9 @@ Now click done, go to the main window and start teaching students how to interpr
                     <child>
                       <object class="GtkToggleButton" id="fs_togglebutton">
                         <property name="label" translatable="yes">Fullscreen</property>
-                        <property name="use_action_appearance">False</property>
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="receives_default">True</property>
-                        <property name="use_action_appearance">False</property>
                         <signal name="toggled" handler="toggle_fs" swapped="no"/>
                       </object>
                       <packing>

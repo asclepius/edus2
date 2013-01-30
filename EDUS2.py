@@ -225,6 +225,7 @@ class Main:
     self.mainWindow = self.builder.get_object("window1")
 
     self.mainWindow.connect("key-press-event",self.on_key_press_event)
+    self.window.show_all()
     self.mainWindow.fullscreen()
 
 if __name__ == "__main__":

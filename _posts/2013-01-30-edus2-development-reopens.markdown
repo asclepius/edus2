@@ -11,11 +11,11 @@ To try the new changes for yourself try the following steps.
 
 1. Copy your working edus2 directory into a back up just in case something goes wrong, this way your scan list won't be affected.  Change the ~/src/edus2 part to whatever directory you have your system in.
 
-    cp -a ~/src/edus2 ~/src/edus2-backup
+        cp -a ~/src/edus2 ~/src/edus2-backup
 
 2. Update to the latest version from github
 
-    cd ~/src/edus2
-    git pull
+        cd ~/src/edus2
+        git pull
 
 3. Run it and check that your settings menu is now scrollable, if you have any problems email/comment and remember that you can run the simulator out of the backup directory you made.

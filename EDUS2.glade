@@ -250,7 +250,7 @@ It provides a simple interface for playing EDUS video using an RFID reader as a 
     <property name="border_width">5</property>
     <property name="modal">True</property>
     <property name="default_width">600</property>
-    <property name="default_height">200</property>
+    <property name="default_height">600</property>
     <property name="type_hint">dialog</property>
     <property name="transient_for">window1</property>
     <child internal-child="vbox">

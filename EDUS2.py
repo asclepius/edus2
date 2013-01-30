@@ -128,7 +128,7 @@ class Main:
     # Get selected path
     ( model, rows ) = sel.get_selected_rows()
 
-    for row in rows:
+    for row in reversed(rows):
       iter1 = model.get_iter( row )
       model.remove(iter1)
 
@@ -221,6 +221,9 @@ class Main:
     xid = self.drawingarea.window.xid
     errorLog = open("mplayer.log", 'w')
     self.mp = mplayer.Player("-vo x11 -zoom -wid %i" % (xid), stderr=errorLog)
+
+    # Set up treeView to allow multiple item selection for better delete
+    self.tree.get_selection().set_mode(gtk.SELECTION_MULTIPLE)
 
     self.mainWindow = self.builder.get_object("window1")
 

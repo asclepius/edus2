@@ -118,21 +118,25 @@ class Main:
   def cb_quick_add_ok_press( self, window ):
     # Get a list of all files in the directory
     quick_add_dir   = self.filechooser_quick.get_filename()
-    print quick_add_dir
     quick_add_files = os.listdir(quick_add_dir)
-    print quick_add_files
+    # For each of the files in the directory we will try to add a scan
     for filename in quick_add_files:
       new_filename    = quick_add_dir + '/' + filename
       new_name        = filename
       self.quick_add_cur_filename.set_text(filename)
+      # Need to grab the focus back into the text ectry box so every scan will end by prompting fo rthe next scan
       self.rfid_quick_entry.grab_focus()
       response = self.quick_add_item.run()
+      # If OK was clicked (or the scan triggered the default action)
       if response == 1:
         new_rfid        = self.rfid_quick_entry.get_text()
         self.list_store1.append([new_name, new_rfid, new_filename])
+      # The button was clicked, the default action is then to skip this file and read the next one
       elif response == 2:
         break
+      # Blank the text entry box and get ready for new text
       self.rfid_quick_entry.set_text('')
+    # The scan is done so hide the directory
     self.quick_add_item.hide()
     return True
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: edus2 New Feature!  Quick add!
+title: New Feature!  Quick add!
 ---
 
 In addition to the bugs pointed out yesterday, there was a request to have a quick-add feature so cards could be put in the list fast.  I rigged this up today and put it through some testing.  It seems to work well and offers some advantages.
@@ -9,7 +9,7 @@ The SimGod now just has to set up a directory with all the files they want for a
 
 Please give it a shot and let me know how you use it.
 
-It is in the master branch on github.  Follow the rules from my [last post]({{page.previous}}) to update your software.  
+It is in the master branch on github.  Follow the rules from my [last post]({{page.previous.url}}) to update your software.  
 
 <iframe src="http://player.vimeo.com/video/58593189" width="500" height="280" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/58593189">edus2 quick scan feature</a> from <a href="http://vimeo.com/paulkulyk">Paul Kulyk</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 

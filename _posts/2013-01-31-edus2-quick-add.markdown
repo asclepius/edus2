@@ -9,7 +9,9 @@ The SimGod now just has to set up a directory with all the files they want for a
 
 Please give it a shot and let me know how you use it.
 
-It is in the master branch on github.  Follow the rules from my [last post]({{page.previous.url}}) to update your software.  
+It is in the master branch on github.  Follow the instructions from my [last post]({{page.previous.url}}) to update your software.  
+
+Here's a video overview, if you go to the vimeo site the quality is much better.
 
 <iframe src="http://player.vimeo.com/video/58593189" width="500" height="280" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/58593189">edus2 quick scan feature</a> from <a href="http://vimeo.com/paulkulyk">Paul Kulyk</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
@@ -17,5 +19,5 @@ Once some others verify it is working I am going to bump the version number.
 
 If you are using this, saving tonnes of money by not buying the expensive commercial simulator, and want to donate to my huge college debt to show your appreciation I'm sure something can be arranged!
 
-Please comment on any [issues](https://github.com/asclepius/edus2/issues?labels=Software&state=open]) you encounter or post below to let me know if you are using it/like the changes.
+Please comment on any [issues](https://github.com/asclepius/edus2/issues?labels=Software&state=open) you encounter or post below to let me know if you are using it/like the changes.
 

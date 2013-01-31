@@ -125,15 +125,16 @@ class Main:
       new_filename    = quick_add_dir + '/' + filename
       new_name        = filename
       self.quick_add_cur_filename.set_text(filename)
+      self.rfid_quick_entry.grab_focus()
       response = self.quick_add_item.run()
-      self.quick_add_item.hide()
       if response == 1:
         new_rfid        = self.rfid_quick_entry.get_text()
         self.list_store1.append([new_name, new_rfid, new_filename])
       elif response == 2:
         break
       self.rfid_quick_entry.set_text('')
-    return response != 1
+    self.quick_add_item.hide()
+    return True
 
 
   def cb_add_scan_apply_clicked( self, window ):
@@ -172,6 +173,7 @@ class Main:
     #Strings from the reader end witha new line... so we take in all characters and process the last 10 on a newline
     if keyname == 'Return':
       rfid_string_scanned = self.dataString[-10::]
+      self.dataString = '';
 
       # This code aims to check if the file is already playing so we don't continually start
       # the movie over if we are on the border of one of the tags

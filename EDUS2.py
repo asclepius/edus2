@@ -109,6 +109,33 @@ class Main:
     self.add_scan_dialog.hide()
     return response != 1
 
+  # Opting to add a whole directory full of videos at once.
+  def cb_quick_add_press( self, window ):
+    response        = self.quick_add_dialog.run()
+    self.quick_add_dialog.hide()
+    return response != 1
+
+  def cb_quick_add_ok_press( self, window ):
+    # Get a list of all files in the directory
+    quick_add_dir   = self.filechooser_quick.get_filename()
+    print quick_add_dir
+    quick_add_files = os.listdir(quick_add_dir)
+    print quick_add_files
+    for filename in quick_add_files:
+      new_filename    = quick_add_dir + '/' + filename
+      new_name        = filename
+      self.quick_add_cur_filename.set_text(filename)
+      response = self.quick_add_item.run()
+      self.quick_add_item.hide()
+      if response == 1:
+        new_rfid        = self.rfid_quick_entry.get_text()
+        self.list_store1.append([new_name, new_rfid, new_filename])
+      elif response == 2:
+        break
+      self.rfid_quick_entry.set_text('')
+    return response != 1
+
+
   def cb_add_scan_apply_clicked( self, window ):
     new_name        = self.name_entry.get_text()
     new_rfid        = self.rfid_entry.get_text()
@@ -202,12 +229,17 @@ class Main:
     self.window           = self.builder.get_object( "window1" )
     self.settings_dialog  = self.builder.get_object( "settings_dialog" )
     self.add_scan_dialog  = self.builder.get_object( "add_scan_dialog" )
+    self.quick_add_dialog  = self.builder.get_object( "quick_add_dialog" )
+    self.quick_add_item  = self.builder.get_object( "quick_add_item" )
     self.about_dialog     = self.builder.get_object( "aboutdialog1")
     self.tree             = self.builder.get_object( "treeview2" )
     self.list_store1      = self.builder.get_object( "treeview" )
     self.rfid_entry       = self.builder.get_object( "rfid_entry" )
+    self.rfid_quick_entry       = self.builder.get_object( "rfid_quick_entry" )
     self.name_entry       = self.builder.get_object( "name_entry" )
+    self.quick_add_cur_filename       = self.builder.get_object( "quick_add_cur_filename" )
     self.filechooser      = self.builder.get_object( "filechooserbutton1" )
+    self.filechooser_quick      = self.builder.get_object( "filechooserbutton_quick" )
 
 
     self.load_settings()

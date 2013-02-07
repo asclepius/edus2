@@ -34,9 +34,9 @@ class Main:
 
   # After the combo boxes have been initialized we set them to have the same selected value
   # as during the last run
-  def load_settings( self ):
+  def load_settings( self, filename ):
     try: 
-      pickle_file = open(sys.path[0] + "/settings.p",'rb')
+      pickle_file = open(filename,'rb')
       list_import = pickle.load(pickle_file)
       self.list_store1.clear()
       for item in list_import:
@@ -46,8 +46,8 @@ class Main:
       print "No pickle file available"
 
   # Pickle the settings data for use in the next run
-  def save_settings( self ):
-    pickle_file = open(sys.path[0] + "/settings.p",'wb')
+  def save_settings( self, filename ):
+    pickle_file = open(filename,'wb')
     list_iter = self.list_store1.get_iter_root() 
     list_dump = []
     while(list_iter):
@@ -84,13 +84,13 @@ class Main:
     return True
 
   def gtk_main_quit( self, window ):
-    self.save_settings()
+    self.save_settings(sys.path[0] + "/settings.p")
     self.mp.quit()
     gtk.main_quit()
 
   def cb_quit(self, window, event):
     print "cb_quit"
-    self.save_settings()
+    self.save_settings(sys.path[0] + "/settings.p")
     self.mp.quit()
     gtk.main_quit()
 
@@ -107,6 +107,24 @@ class Main:
   def cb_add_scan_press( self, window ):
     response        = self.add_scan_dialog.run()
     self.add_scan_dialog.hide()
+    return response != 1
+
+  # Callback to run when load settings button is pressed
+  # Will open a window, prompt for files and update the filename variable
+  def cb_load_settings_press(self, window):
+    response        = self.load_settings_filechooserdialog.run()
+    self.load_settings_filechooserdialog.hide()
+    if response == 1:
+      self.load_settings(self.load_settings_filechooserdialog.get_filename())
+    return response != 1
+
+  # Callback to run when save settings button is pressed
+  # Will open a window, prompt for files and update the filename variable
+  def cb_save_settings_press(self, window):
+    response        = self.save_settings_filechooserdialog.run()
+    self.save_settings_filechooserdialog.hide()
+    if response == 1:
+      self.save_settings(self.save_settings_filechooserdialog.get_filename())
     return response != 1
 
   # Opting to add a whole directory full of videos at once.
@@ -246,9 +264,11 @@ class Main:
     self.quick_add_cur_filename       = self.builder.get_object( "quick_add_cur_filename" )
     self.filechooser      = self.builder.get_object( "filechooserbutton1" )
     self.filechooser_quick      = self.builder.get_object( "filechooserbutton_quick" )
+    self.load_settings_filechooserdialog = self.builder.get_object("load_settings_filechooserdialog")
+    self.save_settings_filechooserdialog = self.builder.get_object("save_settings_filechooserdialog")
 
 
-    self.load_settings()
+    self.load_settings(sys.path[0] + "/settings.p")
 
     self.builder.connect_signals( self )
 

@@ -11,4 +11,4 @@ Follow the instructions on the [January 30, 2013]({{page.previous.previous.url}}
 
 Here is short video overview of the new features.
 
-[edus2 Save and Load Settings Tutorial](http://vimeo.com/59161905)
+[edus2 Save and Load Settings Tutorial](https://vimeo.com/59185633)

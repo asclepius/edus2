@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Copyright (c) 2011 Paul Kulyk, Paul Olszynski
+# Copyright (c) 2011-2013 Paul Kulyk, Paul Olszynski
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

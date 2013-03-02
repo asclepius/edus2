@@ -6,7 +6,7 @@ The edus2 plays predetermined video clips of areas of interest through the coupl
 
 ### Requirements
 
-    Python
-    X11
-    mplayer with X11 support
-    py-mplayer for making calls to mplayer
+* Python
+* X11
+* mplayer with X11 support
+* py-mplayer for making calls to mplayer

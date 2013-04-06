@@ -19,9 +19,12 @@ Paul Kulyk is a senior medical student at the University of Saskatchewan.   He h
 <img style="float:left" src="{{ site.baseurl }}/images/olszynski_floating60.png">
 Paul Olszynski is a staff Emergency Physician at Saskatoon Health Region and Clinical Assistant Professor at the College of Medicine at the University of Saskatchewan. He is currently pursuing a Masters in Medical Education Administration through the College of Education at the U of S.  <br><br>His interests include Point of Care Ultrasound (PoCUS) in emergency medicine and Simulation in medical education.
 
+</p>
+
 <br>
 <a href='mailto:p.olszynski@usask.ca'>p.olszynski@usask.ca</a>
-</p>
+
+Check out his blog [edussimulation.wordpress.com](http://edussimulation.wordpress.com).
 
 <hr>
 ### Acknowledgements

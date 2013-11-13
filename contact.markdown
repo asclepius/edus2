@@ -13,6 +13,11 @@ Paul Kulyk is a senior medical student at the University of Saskatchewan.   He h
 <br>
 <a href='mailto:paul.kulyk@gmail.com'>paul.kulyk@gmail.com</a> 
 </p>
+<p>
+
+His other website is a [blog](http://asclepius.github.com).
+
+</p>
 <hr>
 <h3>Paul Olszynski, MD, CCFP (EM) </h3>
 <p>

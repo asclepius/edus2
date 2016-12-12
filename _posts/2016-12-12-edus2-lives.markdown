@@ -1,0 +1,10 @@
+---
+layout: post
+title: edus2 lives!
+---
+
+Bump!
+
+There has been a flurry of edus2 questions lately.  One was "Is this project still available, there has been no update since 2013..."  Unfortunately, I (Paul K) have not been doing much development lately, however we added a new developer Cam Auser to the team.  He has done some good work, and, being much more open minded than me, he even put together a windows version.  Paul O has been busy promoting the edus2 all over the world and many new systems have been springing up.
+
+There have been some issues with Mplayer and Ubuntu which are easily solved but the documentation has not yet been updated to reflect all that needs doing.  There will be some cleaning of the website and links to the windows version in the next few weeks.
